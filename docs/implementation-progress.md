@@ -16,6 +16,8 @@
 - Validated desktop and mobile rendering with Microsoft Edge via Playwright.
 - Confirmed page title, H1, navigation, section count, and zero browser console errors.
 - Removed unused legacy template pages, unused images, vendored libraries, contact form remnants, alternate theme CSS, and local preview screenshots.
+- Added enterprise-style motion polish: scroll-triggered reveals, subtle hero/card/timeline transitions, mobile menu animation, ambient hero movement, and reduced-motion support.
+- Validated mobile, tablet, and desktop responsiveness with no horizontal overflow and no browser console errors.
 
 ## Decisions
 - Keep the project as static HTML/CSS/JS to preserve GitHub Pages compatibility and avoid unnecessary packages.
@@ -26,7 +28,7 @@
 - Keep only production assets referenced by the current static site plus project documentation and resume.
 
 ## Pending
-- Run final validation and commit final changes.
+- Commit final responsive/motion polish.
 
 ## Risks
 - The contact path uses direct email because no static form provider key or backend is present.

@@ -23,11 +23,12 @@
 - Removed casual blog topics, Facebook/Instagram links, high school entry, and the unreliable static form UI for a more enterprise-oriented profile.
 - Added responsive navigation, reveal animations, active section highlighting, SEO metadata, Open Graph metadata, and reduced-motion support.
 - Removed unused legacy template pages, old image assets, vendored libraries, contact form remnants, alternate theme CSS, and local preview screenshots.
+- Added responsive motion polish: scroll-triggered section reveals, subtle hero and card movement, animated mobile menu, and reduced-motion handling.
+- Validated mobile `390px`, tablet `768px`, and desktop `1366px` widths with no horizontal overflow and no console errors.
 - Local preview validated at `http://127.0.0.1:8080/` using Microsoft Edge through Playwright, with no console errors.
 
 ## Pending Tasks
-- Run final local validation.
-- Commit final work.
+- Commit final responsive/motion polish.
 
 ## Known Issues
 - Direct email contact only; a production form can be added later with Web3Forms/Formspree or a backend key.
