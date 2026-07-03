@@ -373,7 +373,7 @@ h3 {
 }
 
 .hero-stats,
-.stats-band {
+.hero-stats {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1px;
@@ -384,22 +384,19 @@ h3 {
   background: var(--line);
 }
 
-.hero-stats div,
-.stats-band div {
+.hero-stats div {
   padding: 1.35rem;
   background: rgba(255, 255, 255, 0.05);
 }
 
-.hero-stats strong,
-.stats-band strong {
+.hero-stats strong {
   display: block;
   color: var(--text);
   font-size: 2rem;
   line-height: 1;
 }
 
-.hero-stats span,
-.stats-band span {
+.hero-stats span {
   color: var(--muted);
   font-size: .86rem;
 }
@@ -616,11 +613,6 @@ h3 {
   font-size: .94rem;
 }
 
-.stats-band {
-  width: min(calc(100% - 32px), var(--max));
-  padding: 0;
-}
-
 .contact-links {
   display: grid;
   gap: .65rem;
@@ -811,7 +803,6 @@ h3 {
   }
 
   .hero-stats,
-  .stats-band,
   .card-grid,
   .cert-grid,
   .case-study-grid,
