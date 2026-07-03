@@ -6,6 +6,8 @@
 - Rebuilt `index.html` as a modern dark portfolio using Eben Varghese Paul's existing profile content.
 - Added responsive sections for hero, about, skills, services, portfolio/work, stats, blog categories, and contact.
 - Added experience and education content from `ebenvpaul.html`, excluding the resume page's location and mobile contact details.
+- Added GitHub and social profile links from the attached GitHub profile text.
+- Expanded the skills section with additional technologies from the attached tech stack.
 - Replaced the old template CSS and jQuery script with original lightweight CSS and vanilla JavaScript.
 - Added SEO, Open Graph, favicon references, accessible navigation, reduced-motion handling, and a static contact form.
 - Added `.gitignore` for local/system/generated files.
