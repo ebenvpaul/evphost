@@ -376,7 +376,7 @@ h3 {
 .hero-stats,
 .stats-band {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1px;
   overflow: hidden;
   margin-top: 4rem;
