@@ -456,6 +456,22 @@ h3 {
   gap: .8rem;
 }
 
+.stack-groups {
+  display: grid;
+  gap: 1.2rem;
+}
+
+.stack-groups > div {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1.2rem;
+  background: var(--panel);
+}
+
+.stack-groups h3 {
+  margin-bottom: 1rem;
+}
+
 .skill-cloud span {
   border: 1px solid rgba(94, 234, 212, 0.22);
   border-radius: 999px;
@@ -465,9 +481,22 @@ h3 {
   font-weight: 800;
 }
 
+.skill-cloud.secondary span {
+  border-color: rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--muted);
+}
+
 .card-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.cert-grid,
+.case-study-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
 }
 
@@ -494,10 +523,38 @@ h3 {
   font-weight: 900;
 }
 
+.text-link {
+  display: inline-flex;
+  margin-top: .8rem;
+  color: var(--accent);
+  font-weight: 900;
+}
+
 .work-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
+}
+
+.case-card {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1.35rem;
+  background: var(--panel);
+  box-shadow: var(--shadow);
+}
+
+.case-card p {
+  margin-bottom: .8rem;
+  color: var(--muted);
+}
+
+.case-card p:last-child {
+  margin-bottom: 0;
+}
+
+.case-card strong {
+  color: #dbeafe;
 }
 
 .timeline-layout {
@@ -644,6 +701,18 @@ h3 {
   background: rgba(94, 234, 212, 0.14);
 }
 
+.contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .8rem;
+  margin-top: 1.4rem;
+}
+
+.contact-note {
+  margin: 1rem 0 0;
+  font-size: .92rem;
+}
+
 .contact-form {
   display: grid;
   gap: .9rem;
@@ -748,6 +817,8 @@ h3 {
 
   .card-grid,
   .work-grid,
+  .cert-grid,
+  .case-study-grid,
   .timeline-layout {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -785,6 +856,8 @@ h3 {
   .stats-band,
   .card-grid,
   .work-grid,
+  .cert-grid,
+  .case-study-grid,
   .timeline-layout {
     grid-template-columns: 1fr;
   }
