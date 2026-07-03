@@ -770,7 +770,11 @@ h3 {
 
 .policy-header {
   position: sticky;
-  transform: translateX(-50%);
+  top: 16px;
+  left: auto;
+  right: auto;
+  transform: none;
+  margin: 16px auto 0;
 }
 
 .policy-nav {
@@ -908,6 +912,30 @@ h3 {
     padding: .9rem 1rem;
   }
 
+  .policy-header {
+    top: 10px;
+    left: auto;
+    transform: none;
+  }
+
+  .policy-nav {
+    position: static;
+    inset: auto;
+    display: flex;
+    width: auto;
+    flex-direction: row;
+    align-items: center;
+    border: 0;
+    border-radius: 999px;
+    padding: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .policy-nav a {
+    padding: .62rem .78rem;
+  }
+
   .hero-grid,
   .content-grid,
   .contact-section {
@@ -942,6 +970,19 @@ h3 {
 
   .brand span:last-child {
     display: none;
+  }
+
+  .policy-header .brand span:last-child {
+    display: inline;
+  }
+
+  .policy-header {
+    width: min(calc(100% - 20px), var(--max));
+  }
+
+  .policy-nav a {
+    font-size: .84rem;
+    padding: .5rem .62rem;
   }
 
   .section {
