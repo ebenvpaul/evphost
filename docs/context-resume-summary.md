@@ -22,8 +22,8 @@
 - Added `docs/Resume.pdf` and resume CTAs.
 - Removed casual blog topics, Facebook/Instagram links, high school entry, and the unreliable static form UI for a more enterprise-oriented profile.
 - Added responsive navigation, reveal animations, active section highlighting, SEO metadata, Open Graph metadata, and reduced-motion support.
+- Removed unused legacy template pages, old image assets, vendored libraries, contact form remnants, alternate theme CSS, and local preview screenshots.
 - Local preview validated at `http://127.0.0.1:8080/` using Microsoft Edge through Playwright, with no console errors.
-- Local screenshots generated at `docs/preview-desktop.png` and `docs/preview-mobile.png`; ignored from git.
 
 ## Pending Tasks
 - Run final local validation.
@@ -31,7 +31,7 @@
 
 ## Known Issues
 - Direct email contact only; a production form can be added later with Web3Forms/Formspree or a backend key.
-- Legacy unused libraries and pages remain for compatibility.
+- Removed legacy pages and vendored libraries; restore from git history if needed.
 
 ## Next Command
 - `python -m http.server 8080`

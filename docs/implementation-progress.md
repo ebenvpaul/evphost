@@ -15,7 +15,7 @@
 - Ran a local preview at `http://127.0.0.1:8080/`.
 - Validated desktop and mobile rendering with Microsoft Edge via Playwright.
 - Confirmed page title, H1, navigation, section count, and zero browser console errors.
-- Generated local preview screenshots at `docs/preview-desktop.png` and `docs/preview-mobile.png` for review; these are ignored to avoid committing binary artifacts.
+- Removed unused legacy template pages, unused images, vendored libraries, contact form remnants, alternate theme CSS, and local preview screenshots.
 
 ## Decisions
 - Keep the project as static HTML/CSS/JS to preserve GitHub Pages compatibility and avoid unnecessary packages.
@@ -23,13 +23,14 @@
 - Preserve old secondary pages for compatibility while making `index.html` the modern primary experience.
 - Keep contact details from the main portfolio brief and do not import the Dubai location or +971 mobile number from `ebenvpaul.html`.
 - Use direct email and resume CTAs until a production static-form provider key is available.
+- Keep only production assets referenced by the current static site plus project documentation and resume.
 
 ## Pending
 - Run final validation and commit final changes.
 
 ## Risks
 - The contact path uses direct email because no static form provider key or backend is present.
-- Some existing legacy assets remain tracked because they are part of the current repository history.
+- Legacy pages/assets were removed from the working tree; older versions remain available through git history.
 
 ## Next Steps
 - Run local preview validation.
