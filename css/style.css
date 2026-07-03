@@ -303,7 +303,7 @@ h3 {
 .hero-panel {
   position: relative;
   justify-self: end;
-  width: min(100%, 410px);
+  width: min(100%, 340px);
   padding: 16px;
   border: 1px solid var(--line);
   border-radius: 34px;
@@ -313,7 +313,7 @@ h3 {
 
 .hero-panel img {
   width: 100%;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 4 / 4.7;
   object-fit: cover;
   border-radius: 24px;
   filter: saturate(1.04) contrast(1.02);
