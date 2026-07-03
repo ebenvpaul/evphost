@@ -11,20 +11,24 @@
     .filter(Boolean);
 
   const setScrolled = () => {
+    if (!header) return;
     header.classList.toggle("is-scrolled", window.scrollY > 24);
   };
 
   const closeNav = () => {
+    if (!nav || !navToggle) return;
     nav.classList.remove("is-open");
     document.body.classList.remove("nav-open");
     navToggle.setAttribute("aria-expanded", "false");
   };
 
-  navToggle.addEventListener("click", () => {
-    const isOpen = nav.classList.toggle("is-open");
-    document.body.classList.toggle("nav-open", isOpen);
-    navToggle.setAttribute("aria-expanded", String(isOpen));
-  });
+  if (nav && navToggle) {
+    navToggle.addEventListener("click", () => {
+      const isOpen = nav.classList.toggle("is-open");
+      document.body.classList.toggle("nav-open", isOpen);
+      navToggle.setAttribute("aria-expanded", String(isOpen));
+    });
+  }
 
   navLinks.forEach((link) => link.addEventListener("click", closeNav));
 
@@ -65,16 +69,18 @@
     revealItems.forEach((item) => item.classList.add("is-visible"));
   }
 
-  const activeObserver = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (!entry.isIntersecting) return;
-      navLinks.forEach((link) => {
-        link.classList.toggle("active", link.getAttribute("href") === `#${entry.target.id}`);
+  if (sections.length > 0 && "IntersectionObserver" in window) {
+    const activeObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        navLinks.forEach((link) => {
+          link.classList.toggle("active", link.getAttribute("href") === `#${entry.target.id}`);
+        });
       });
-    });
-  }, { rootMargin: "-40% 0px -55% 0px" });
+    }, { rootMargin: "-40% 0px -55% 0px" });
 
-  sections.forEach((section) => activeObserver.observe(section));
+    sections.forEach((section) => activeObserver.observe(section));
+  }
 
   const year = document.querySelector("[data-year]");
   if (year) {

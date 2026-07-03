@@ -18,6 +18,7 @@
 - Removed unused legacy template pages, unused images, vendored libraries, contact form remnants, alternate theme CSS, and local preview screenshots.
 - Added enterprise-style motion polish: scroll-triggered reveals, subtle hero/card/timeline transitions, mobile menu animation, ambient hero movement, and reduced-motion support.
 - Validated mobile, tablet, and desktop responsiveness with no horizontal overflow and no browser console errors.
+- Added reusable `privacy-policy.html` for apps, websites, and software developments, linked from the footer.
 
 ## Decisions
 - Keep the project as static HTML/CSS/JS to preserve GitHub Pages compatibility and avoid unnecessary packages.
@@ -26,6 +27,7 @@
 - Keep contact details from the main portfolio brief and do not import the Dubai location or +971 mobile number from `ebenvpaul.html`.
 - Use direct email and resume CTAs until a production static-form provider key is available.
 - Keep only production assets referenced by the current static site plus project documentation and resume.
+- Keep privacy policy static and reusable for app store, website, and software project references unless a specific product needs a dedicated policy.
 
 ## Pending
 - Commit final responsive/motion polish.
